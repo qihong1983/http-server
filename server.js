@@ -37,10 +37,7 @@ function loadFile(pathname, response,request) {
 					});
 					return ;
 				}
-				console.log(err, stats);
-				console.log(stats.isDirectory());
 				if (stats.isDirectory()) {
-					console.log(fn,'77777777777777777777');
 					var stat = fs.lstatSync(fn);
 					response.writeHead(200);
 					response.write('data');
